@@ -50,8 +50,8 @@ export default function BlogIndex() {
                  </div>
               </div>
               <div className="p-6 flex flex-col flex-grow">
-                <span className="text-sm font-semibold text-brand-orange mb-3">{post.date}</span>
-                <h2 className="text-xl font-bold text-brand-black mb-3 group-hover:text-brand-orange transition-colors">{post.title}</h2>
+                <span className="text-sm font-semibold text-brand-purple mb-3">{post.date}</span>
+                <h2 className="text-xl font-bold text-brand-black mb-3 group-hover:text-brand-purple transition-colors">{post.title}</h2>
                 <p className="text-gray-600 mb-6 flex-grow">{post.excerpt}</p>
                 <div className="mt-auto flex items-center text-brand-black font-semibold">
                   Read Article &rarr;
@@ -61,7 +61,7 @@ export default function BlogIndex() {
           ))}
         </div>
 
-        <div className="bg-orange-50 p-12 rounded-3xl text-center border border-orange-100">
+        <div className="bg-purple-50 p-12 rounded-3xl text-center border border-purple-100">
           <h2 className="text-3xl font-bold text-brand-black mb-6">Need expert help implementing these strategies?</h2>
           <WhatsAppCTA className="px-10 py-4" variant="primary">Talk to an Expert</WhatsAppCTA>
         </div>

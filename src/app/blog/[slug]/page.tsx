@@ -21,7 +21,7 @@ export default async function BlogPost(
   return (
     <article className="py-20 md:py-32">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <Link href="/blog" className="text-brand-orange font-semibold hover:underline mb-8 inline-block">
+        <Link href="/blog" className="text-brand-purple font-semibold hover:underline mb-8 inline-block">
           &larr; Back to Blog
         </Link>
         <h1 className="text-4xl md:text-5xl font-extrabold text-brand-black mb-6">{title}</h1>
@@ -31,7 +31,7 @@ export default async function BlogPost(
           <span>5 min read</span>
         </div>
         
-        <div className="prose prose-lg prose-orange max-w-none text-gray-700">
+        <div className="prose prose-lg prose-purple max-w-none text-gray-700">
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">This is a placeholder for the blog post content. In a production environment, this content would be fetched from a headless CMS (like Sanity, Contentful, or Strapi) or loaded from local MDX files.</p>
           <h2 className="text-2xl font-bold text-brand-black mb-4 mt-8">The Problem</h2>
           <p className="mb-6 leading-relaxed">Many D2C founders struggle with scaling their revenue profitably. They throw money at Meta ads without optimizing their storefront, leading to high bounce rates and wasted spend.</p>

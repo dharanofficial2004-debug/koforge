@@ -9,7 +9,7 @@ export default function MobileBottomBar() {
         href={WHATSAPP_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full bg-brand-orange text-white font-bold py-3 rounded-lg text-center shadow-md flex items-center justify-center gap-2 hover:bg-orange-600 transition-colors"
+        className="w-full bg-brand-purple text-white font-bold py-3 rounded-lg text-center shadow-md flex items-center justify-center gap-2 hover:bg-purple-600 transition-colors"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

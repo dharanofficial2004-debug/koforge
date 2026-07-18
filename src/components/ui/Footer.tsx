@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import WhatsAppCTA from "./WhatsAppCTA";
 
 export default function Footer() {
@@ -8,8 +9,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
           
           <div className="col-span-1 md:col-span-1 space-y-4">
-            <Link href="/" className="text-2xl font-extrabold tracking-tight">
-              Ko<span className="text-brand-orange">Forge</span>
+            <Link href="/" className="inline-block">
+              <Image src="/koforgelogoico.ico" alt="KoForge Logo" width={48} height={48} className="h-12 w-auto" />
             </Link>
             <p className="text-gray-400 text-sm mt-4 leading-relaxed">
               The engine behind your online sales. We help D2C brands scale beyond marketplaces with high-performance websites and ads.
@@ -20,17 +21,17 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase mb-4">Services</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/services/website-development" className="text-gray-400 hover:text-brand-orange text-sm transition-colors">
+                <Link href="/services/website-development" className="text-gray-400 hover:text-brand-purple text-sm transition-colors">
                   eCommerce Website Development
                 </Link>
               </li>
               <li>
-                <Link href="/services/performance-ads" className="text-gray-400 hover:text-brand-orange text-sm transition-colors">
+                <Link href="/services/performance-ads" className="text-gray-400 hover:text-brand-purple text-sm transition-colors">
                   Meta & Google Ads
                 </Link>
               </li>
               <li>
-                <Link href="/services/influencer-marketing" className="text-gray-400 hover:text-brand-orange text-sm transition-colors">
+                <Link href="/services/influencer-marketing" className="text-gray-400 hover:text-brand-purple text-sm transition-colors">
                   Influencer Marketing
                 </Link>
               </li>
@@ -41,13 +42,13 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-gray-200 tracking-wider uppercase mb-4">Company</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-brand-orange text-sm transition-colors">About Us</Link>
+                <Link href="/about" className="text-gray-400 hover:text-brand-purple text-sm transition-colors">About Us</Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-brand-orange text-sm transition-colors">Blog</Link>
+                <Link href="/blog" className="text-gray-400 hover:text-brand-purple text-sm transition-colors">Blog</Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-brand-orange text-sm transition-colors">Contact</Link>
+                <Link href="/contact" className="text-gray-400 hover:text-brand-purple text-sm transition-colors">Contact</Link>
               </li>
             </ul>
           </div>
@@ -57,11 +58,11 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex flex-col text-sm text-gray-400">
                 <span className="font-semibold text-gray-300">Phone</span>
-                <a href="tel:+918838235891" className="hover:text-brand-orange transition-colors">+91 88382 35891</a>
+                <a href="tel:+918838235891" className="hover:text-brand-purple transition-colors">+91 88382 35891</a>
               </li>
               <li className="flex flex-col text-sm text-gray-400">
                 <span className="font-semibold text-gray-300">Email</span>
-                <a href="mailto:koforge.official@gmail.com" className="hover:text-brand-orange transition-colors">koforge.official@gmail.com</a>
+                <a href="mailto:koforge.official@gmail.com" className="hover:text-brand-purple transition-colors">koforge.official@gmail.com</a>
               </li>
               <li className="flex flex-col text-sm text-gray-400">
                 <span className="font-semibold text-gray-300">Location</span>

@@ -28,7 +28,7 @@ export default function About() {
               To become the most trusted eCommerce growth partner in India, known for transparent data, exceptional engineering, and measurable ROI.
             </p>
           </div>
-          <div className="bg-orange-50 p-10 rounded-3xl border border-orange-100">
+          <div className="bg-purple-50 p-10 rounded-3xl border border-purple-100">
             <h3 className="text-2xl font-bold text-brand-black mb-6">Core Values</h3>
             <ul className="space-y-4">
               {[
@@ -37,7 +37,7 @@ export default function About() {
                 { title: "Partnership", desc: "We act as an extension of your internal team, sharing your goals." }
               ].map((val, i) => (
                 <li key={i} className="flex gap-4">
-                  <div className="flex-shrink-0 mt-1 text-brand-orange">
+                  <div className="flex-shrink-0 mt-1 text-brand-purple">
                     <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>

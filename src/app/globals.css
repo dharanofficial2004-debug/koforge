@@ -2,7 +2,7 @@
 
 @theme {
   --color-brand-black: #1a1a1a;
-  --color-brand-orange: #FF6A00;
+  --color-brand-purple: #6d28d9;
   
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-heading: var(--font-outfit), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

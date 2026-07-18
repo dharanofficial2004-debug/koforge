@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import WhatsAppCTA from "./WhatsAppCTA";
 
@@ -22,8 +23,8 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-extrabold tracking-tight text-brand-black">
-              Ko<span className="text-brand-orange">Forge</span>
+            <Link href="/" className="flex items-center">
+              <Image src="/koforgelogoico.ico" alt="KoForge Logo" width={40} height={40} className="h-10 w-auto" />
             </Link>
           </div>
           
@@ -35,8 +36,8 @@ export default function Header() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`text-sm font-medium transition-colors hover:text-brand-orange ${
-                    isActive ? "text-brand-orange" : "text-gray-600"
+                  className={`text-sm font-medium transition-colors hover:text-brand-purple ${
+                    isActive ? "text-brand-purple" : "text-gray-600"
                   }`}
                 >
                   {link.name}
@@ -86,8 +87,8 @@ export default function Header() {
                   onClick={() => setIsOpen(false)}
                   className={`block rounded-md px-3 py-2 text-base font-medium ${
                     isActive
-                      ? "bg-orange-50 text-brand-orange"
-                      : "text-gray-700 hover:bg-gray-50 hover:text-brand-orange"
+                      ? "bg-purple-50 text-brand-purple"
+                      : "text-gray-700 hover:bg-gray-50 hover:text-brand-purple"
                   }`}
                 >
                   {link.name}

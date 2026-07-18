@@ -16,14 +16,14 @@ export default function PerformanceAdsService() {
         <nav className="flex text-sm text-gray-500 mb-8" aria-label="Breadcrumb">
           <ol className="inline-flex items-center space-x-1 md:space-x-3">
             <li className="inline-flex items-center">
-              <Link href="/" className="hover:text-brand-orange">Home</Link>
+              <Link href="/" className="hover:text-brand-purple">Home</Link>
             </li>
             <li>
               <div className="flex items-center">
                 <svg className="w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4"/>
                 </svg>
-                <Link href="/services" className="hover:text-brand-orange ml-1 md:ml-2">Services</Link>
+                <Link href="/services" className="hover:text-brand-purple ml-1 md:ml-2">Services</Link>
               </div>
             </li>
             <li aria-current="page">
@@ -62,7 +62,7 @@ export default function PerformanceAdsService() {
             { title: "Profitability Focus", desc: "We optimize for contribution margin and net profit, not just top-line revenue or vanity metrics." }
           ].map((benefit, i) => (
             <div key={i} className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
-              <div className="w-12 h-12 bg-orange-50 text-brand-orange rounded-full flex items-center justify-center mb-4 font-bold">
+              <div className="w-12 h-12 bg-purple-50 text-brand-purple rounded-full flex items-center justify-center mb-4 font-bold">
                 {i + 1}
               </div>
               <h3 className="text-xl font-bold text-brand-black mb-3">{benefit.title}</h3>

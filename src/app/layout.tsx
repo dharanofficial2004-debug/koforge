@@ -59,7 +59,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "KoForge",
-    image: "https://koforge.com/logo.png",
+    image: "https://koforge.com/koforgelogoico.ico",
     "@id": "https://koforge.com",
     url: "https://koforge.com",
     telephone: "+918838235891",
@@ -90,7 +90,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col selection:bg-brand-orange selection:text-white">
+      <body className="min-h-full flex flex-col selection:bg-brand-purple selection:text-white">
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

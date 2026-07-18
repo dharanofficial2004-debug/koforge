@@ -22,17 +22,17 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-brand-black text-white py-20 md:py-32">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-orange via-transparent to-transparent"></div>
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-purple via-transparent to-transparent"></div>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-            The Engine Behind Your <span className="text-brand-orange">Online Sales</span>
+            The Engine Behind Your <span className="text-brand-purple">Online Sales</span>
           </h1>
           <p className="mt-4 text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10">
             We help D2C brands scale beyond marketplaces with high-performance eCommerce websites, Meta & Google Ads, and Influencer Marketing.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <WhatsAppCTA className="px-8 py-4 text-lg">Get Your Free Growth Audit</WhatsAppCTA>
-            <Link href="/services" className="text-white hover:text-brand-orange font-semibold transition-colors px-6 py-4">
+            <Link href="/services" className="text-white hover:text-brand-purple font-semibold transition-colors px-6 py-4">
               Explore Services &rarr;
             </Link>
           </div>
@@ -93,7 +93,7 @@ export default function Home() {
               <ul className="space-y-4">
                 {['Data-Driven Decisions', 'Mobile-First Designs', 'Transparent Reporting', 'Dedicated Account Managers'].map((item, i) => (
                   <li key={i} className="flex items-center text-brand-black font-medium">
-                    <svg className="h-6 w-6 text-brand-orange mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="h-6 w-6 text-brand-purple mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     {item}
@@ -107,7 +107,7 @@ export default function Home() {
               <div className="space-y-8">
                 {processSteps.map((step, i) => (
                   <div key={i} className="flex gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-brand-orange text-white flex items-center justify-center font-bold">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-full bg-brand-purple text-white flex items-center justify-center font-bold">
                       {i + 1}
                     </div>
                     <div>

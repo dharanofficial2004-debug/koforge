@@ -18,7 +18,7 @@ export default function FAQAccordion({ items }: { items: FAQItemProps[] }) {
       {items.map((item, index) => (
         <div key={index} className="border border-gray-200 rounded-lg overflow-hidden bg-white">
           <button
-            className="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none focus-visible:ring focus-visible:ring-brand-orange/50 hover:bg-gray-50 transition-colors"
+            className="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none focus-visible:ring focus-visible:ring-brand-purple/50 hover:bg-gray-50 transition-colors"
             onClick={() => toggleAccordion(index)}
           >
             <span className="font-semibold text-brand-black">{item.question}</span>
