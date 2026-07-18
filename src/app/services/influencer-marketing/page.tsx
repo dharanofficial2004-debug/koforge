@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import WhatsAppCTA from "@/components/ui/WhatsAppCTA";
 
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function InfluencerMarketingService() {
   return (
-    <div className="py-20 md:py-32">
+    <div className="pt-6 pb-20 md:pb-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Breadcrumbs */}
@@ -47,10 +48,15 @@ export default function InfluencerMarketingService() {
               <WhatsAppCTA className="px-8 py-4">Find Your Creators</WhatsAppCTA>
             </div>
           </div>
-          <div className="bg-gray-100 rounded-3xl h-80 flex items-center justify-center border border-gray-200 shadow-inner">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-24 w-24 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
+          <div className="relative rounded-3xl overflow-hidden shadow-xl">
+            <Image
+              src="/koforgeinfluencermarketingimage.png"
+              alt="KoForge Influencer Marketing"
+              width={700}
+              height={500}
+              className="w-full h-auto object-cover"
+              priority
+            />
           </div>
         </div>
 

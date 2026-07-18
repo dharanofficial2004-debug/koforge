@@ -21,18 +21,20 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-brand-black text-white py-20 md:py-32">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-purple via-transparent to-transparent"></div>
+      <section
+        className="relative overflow-hidden bg-cover bg-center py-20 md:py-32"
+        style={{ backgroundImage: "url('/koforgeherobackground.png')" }}
+      >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-brand-black">
             The Engine Behind Your <span className="text-brand-purple">Online Sales</span>
           </h1>
-          <p className="mt-4 text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10">
+          <p className="mt-4 text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto mb-10">
             We help D2C brands scale beyond marketplaces with high-performance eCommerce websites, Meta & Google Ads, and Influencer Marketing.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <WhatsAppCTA className="px-8 py-4 text-lg">Get Your Free Growth Audit</WhatsAppCTA>
-            <Link href="/services" className="text-white hover:text-brand-purple font-semibold transition-colors px-6 py-4">
+            <Link href="/services" className="text-brand-black hover:text-brand-purple font-semibold transition-colors px-6 py-4">
               Explore Services &rarr;
             </Link>
           </div>
@@ -47,8 +49,8 @@ export default function Home() {
             <p className="mt-4 text-lg text-gray-600">Everything you need to grow your eCommerce business.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ServiceCard 
-              title="eCommerce Website Development" 
+            <ServiceCard
+              title="eCommerce Website Development"
               description="Custom, blazing-fast Shopify and Next.js storefronts designed to convert visitors into buyers."
               href="/services/website-development"
               icon={
@@ -57,8 +59,8 @@ export default function Home() {
                 </svg>
               }
             />
-            <ServiceCard 
-              title="Performance Marketing" 
+            <ServiceCard
+              title="Performance Marketing"
               description="Data-driven Meta and Google Ads campaigns that aggressively drive down CAC and boost ROAS."
               href="/services/performance-ads"
               icon={
@@ -67,8 +69,8 @@ export default function Home() {
                 </svg>
               }
             />
-            <ServiceCard 
-              title="Influencer Marketing" 
+            <ServiceCard
+              title="Influencer Marketing"
               description="Authentic brand collaborations that build trust and drive high-intent traffic to your store."
               href="/services/influencer-marketing"
               icon={
@@ -101,7 +103,7 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-            
+
             <div className="bg-gray-50 p-8 md:p-12 rounded-3xl border border-gray-100">
               <h3 className="text-2xl font-bold mb-8 text-brand-black">Our Process</h3>
               <div className="space-y-8">
@@ -129,12 +131,12 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-white">Loved by eCommerce Brands</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <TestimonialCard 
+            <TestimonialCard
               quote="KoForge completely transformed our online presence. Our conversion rate jumped by 45% in the first two months after the new website launch."
               author="Rahul S."
               brand="D2C Apparel Brand"
             />
-            <TestimonialCard 
+            <TestimonialCard
               quote="Their Meta Ads strategies are top-notch. We were struggling with high CAC, but KoForge brought it down significantly while scaling our spend."
               author="Priya M."
               brand="Beauty & Cosmetics Store"

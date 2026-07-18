@@ -24,7 +24,7 @@ export default function Header() {
         <div className="flex h-20 items-center justify-between">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <Image src="/koforgelogoico.ico" alt="KoForge Logo" width={40} height={40} className="h-10 w-auto" />
+              <Image src="/koforgelogo.png" alt="KoForge Logo" width={240} height={64} className="h-16 w-auto" priority />
             </Link>
           </div>
           
