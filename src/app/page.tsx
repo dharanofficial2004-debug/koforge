@@ -238,8 +238,8 @@ export default function Home() {
             />
             <TestimonialCard
               quote="They delivered an affordable website with a premium look and feel. The quality and support were excellent. Good to work with you, Dharan."
-              author="lakshmi photo studio"
-              brand="Lakshmi Photo Studio"
+              author="prabu"
+              brand="Rani Photo Studio"
             />
             <TestimonialCard
               quote="The e-commerce frontend development was designed very well with a strong UI and UX. It looked polished and modern throughout."
