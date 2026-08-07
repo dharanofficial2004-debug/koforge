@@ -243,7 +243,7 @@ export default function Home() {
             />
             <TestimonialCard
               quote="The e-commerce frontend development was designed very well with a strong UI and UX. It looked polished and modern throughout."
-              author="Kokofresh"
+              author="aarthy"
               brand="Kokofresh"
             />
           </div>
