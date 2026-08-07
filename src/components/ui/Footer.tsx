@@ -35,6 +35,11 @@ export default function Footer() {
                   Influencer Marketing
                 </Link>
               </li>
+              <li>
+                <Link href="/services/automation" className="text-gray-400 hover:text-brand-purple text-sm transition-colors">
+                  Business Automation
+                </Link>
+              </li>
             </ul>
           </div>
 

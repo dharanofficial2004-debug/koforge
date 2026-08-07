@@ -9,6 +9,7 @@ import WhatsAppCTA from "./WhatsAppCTA";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Services", href: "/services" },
+  { name: "Automation", href: "/services/automation" },
   { name: "About", href: "/about" },
   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
