@@ -1,6 +1,6 @@
 interface TestimonialCardProps {
   quote: string;
-  author: string;
+  author?: string;
   brand: string;
   href?: string;
 }
@@ -15,7 +15,7 @@ export default function TestimonialCard({ quote, author, brand, href }: Testimon
       </div>
       <p className="text-gray-700 italic mb-6 leading-relaxed">"{quote}"</p>
       <div>
-        <h4 className="font-bold text-brand-black">{author}</h4>
+        {author && <h4 className="font-bold text-brand-black">{author}</h4>}
         <p className="text-sm text-brand-purple font-medium">
           {href ? (
             <a

@@ -249,6 +249,11 @@ export default function Home() {
               brand="Kokofresh"
               href="https://www.kokofresh.in/"
             />
+            <TestimonialCard
+              quote="We got a very affordable price and excellent support. Rajesh built us a beautiful design that impressed us throughout the process."
+              brand="Madurai MK Travels"
+              href="https://www.maduraismktravels.in/"
+            />
           </div>
         </div>
       </section>
