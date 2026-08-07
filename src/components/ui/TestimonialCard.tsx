@@ -2,9 +2,10 @@ interface TestimonialCardProps {
   quote: string;
   author: string;
   brand: string;
+  href?: string;
 }
 
-export default function TestimonialCard({ quote, author, brand }: TestimonialCardProps) {
+export default function TestimonialCard({ quote, author, brand, href }: TestimonialCardProps) {
   return (
     <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
       <div className="text-brand-purple mb-4 opacity-30">
@@ -15,7 +16,20 @@ export default function TestimonialCard({ quote, author, brand }: TestimonialCar
       <p className="text-gray-700 italic mb-6 leading-relaxed">"{quote}"</p>
       <div>
         <h4 className="font-bold text-brand-black">{author}</h4>
-        <p className="text-sm text-brand-purple font-medium">{brand}</p>
+        <p className="text-sm text-brand-purple font-medium">
+          {href ? (
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              {brand}
+            </a>
+          ) : (
+            brand
+          )}
+        </p>
       </div>
     </div>
   );

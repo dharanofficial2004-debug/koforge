@@ -235,16 +235,19 @@ export default function Home() {
               quote="The UI/UX design was very creative and impressive. They also handled payment integration, Google Maps, and other essentials really well. It was a great experience working with them."
               author="Madhan"
               brand="Feminiq"
+              href="https://www.feminiq.in/"
             />
             <TestimonialCard
               quote="They delivered an affordable website with a premium look and feel. The quality and support were excellent. Good to work with you, Dharan."
               author="prabu"
               brand="Rani Photo Studio"
+              href="https://ranistudio.framer.website/albums/baby-photography-memories"
             />
             <TestimonialCard
               quote="The e-commerce frontend development was designed very well with a strong UI and UX. It looked polished and modern throughout."
               author="aarthy"
               brand="Kokofresh"
+              href="https://www.kokofresh.in/"
             />
           </div>
         </div>
