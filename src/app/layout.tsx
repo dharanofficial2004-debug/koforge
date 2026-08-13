@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/ui/Header";
-import Footer from "@/components/ui/Footer";
-import StickyWhatsApp from "@/components/ui/StickyWhatsApp";
-import MobileBottomBar from "@/components/ui/MobileBottomBar";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -83,6 +79,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${outfit.variable} h-full antialiased scroll-smooth`}
+      suppressHydrationWarning
     >
       <head>
         <script
@@ -101,11 +98,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col selection:bg-brand-purple selection:text-white">
-        <Header />
-        <main className="flex-grow">{children}</main>
-        <Footer />
-        <StickyWhatsApp />
-        <MobileBottomBar />
+        {children}
       </body>
     </html>
   );
