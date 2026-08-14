@@ -89,7 +89,7 @@ export default function IndependenceOffer() {
   ];
 
   return (
-    <div className="bg-white min-h-screen text-brand-black pb-24 md:pb-0 font-sans">
+    <div className="bg-white min-h-screen text-brand-black font-sans">
       
       {/* 1. HERO SECTION */}
       <section className="relative py-16 md:py-24 bg-white border-b border-gray-100">
