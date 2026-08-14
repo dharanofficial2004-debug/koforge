@@ -105,7 +105,7 @@ export default function IndependenceOffer() {
           </div>
           
           {/* Main Headline */}
-          <h1 className="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-brand-black leading-[1.15] tracking-tight max-w-3xl" style={{contentVisibility: 'visible'}}>
+          <h1 className="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-brand-black leading-[1.15] tracking-tight max-w-3xl">
             Tiripur&apos;s Fashion Brands Deserve Their Own <span className="text-brand-purple">Store&nbsp;Online</span>
           </h1>
           
