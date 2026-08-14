@@ -105,7 +105,7 @@ export default function IndependenceOffer() {
           </div>
           
           {/* Main Headline */}
-          <h1 className="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-brand-black leading-[1.15] tracking-tight max-w-3xl">
+          <h1 className="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-brand-black leading-[1.15] tracking-tight max-w-3xl" style={{contentVisibility: 'visible'}}>
             Tiripur&apos;s Fashion Brands Deserve Their Own <span className="text-brand-purple">Store&nbsp;Online</span>
           </h1>
           
@@ -275,7 +275,7 @@ export default function IndependenceOffer() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
           
           {/* Badge Scarcity */}
-          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-red-650 text-white mb-6 animate-pulse border border-red-500">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-red-650 text-white mb-6 border border-red-500">
             🚨 Only 3 Brands This Independence Day
           </div>
           
