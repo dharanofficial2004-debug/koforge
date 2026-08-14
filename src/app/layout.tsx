@@ -87,7 +87,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${outfit.variable} h-full antialiased scroll-smooth`}
+      className={`${inter.variable} ${outfit.variable} antialiased scroll-smooth`}
     >
       <head>
         <script
@@ -95,7 +95,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col selection:bg-brand-purple selection:text-white">
+      <body className="min-h-screen flex flex-col selection:bg-brand-purple selection:text-white">
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
