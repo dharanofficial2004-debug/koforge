@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import TestimonialCarousel from "./TestimonialCarousel";
 import Footer from "@/components/ui/Footer";
+import TestimonialCarousel from "./TestimonialCarouselWrapper";
 
 export const metadata: Metadata = {
   title: "Get Your Fashion Brand Online — 40% Off | KoForge",
@@ -91,15 +91,6 @@ export default function IndependenceOffer() {
 
   return (
     <div className="bg-white min-h-screen text-brand-black pb-24 md:pb-0 font-sans">
-      <style dangerouslySetInnerHTML={{__html: `
-        .no-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-        .no-scrollbar {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}} />
       
       {/* 1. HERO SECTION */}
       <section className="relative py-16 md:py-24 bg-white border-b border-gray-100">

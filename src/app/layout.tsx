@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
+import Header from "@/components/ui/Header";
+import Footer from "@/components/ui/Footer";
+import StickyWhatsApp from "@/components/ui/StickyWhatsApp";
+import MobileBottomBar from "@/components/ui/MobileBottomBar";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -79,15 +84,24 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${outfit.variable} h-full antialiased scroll-smooth`}
-      suppressHydrationWarning
     >
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {/* Microsoft Clarity */}
-        <script
+      </head>
+      <body className="min-h-full flex flex-col selection:bg-brand-purple selection:text-white">
+        <Header />
+        <main className="flex-grow">{children}</main>
+        <Footer />
+        <StickyWhatsApp />
+        <MobileBottomBar />
+
+        {/* Microsoft Clarity — deferred after page is interactive */}
+        <Script
+          id="clarity-script"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -96,9 +110,24 @@ export default function RootLayout({
     })(window, document, "clarity", "script", "xqavtsyr7v");`,
           }}
         />
-      </head>
-      <body className="min-h-full flex flex-col selection:bg-brand-purple selection:text-white">
-        {children}
+
+        {/* Meta Pixel — deferred after page is interactive */}
+        <Script
+          id="fb-pixel"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '1644790604100580');fbq('track', 'PageView');`,
+          }}
+        />
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=1644790604100580&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
       </body>
     </html>
   );
